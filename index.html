@@ -68,7 +68,7 @@
         .t-sym { color: #fff; }
         .t-up { color: #4caf50; }
         .t-down { color: #f44336; }
-        .t-personal { color: #00bcd4; } /* Subtle cyan for personal traits */
+        .t-personal { color: #00bcd4; }
 
         @keyframes ticker {
             0% { transform: translateX(0); }
@@ -89,11 +89,11 @@
 
         .wsj-logo {
             font-family: var(--font-escrow);
-            font-size: 44px;
-            font-weight: 800;
-            letter-spacing: -2px;
+            font-size: 46px;
+            font-weight: 400; /* Removed bold per request */
+            letter-spacing: -0.5px;
             color: var(--wsj-black);
-            transform: scaleY(1.1);
+            transform: scaleY(1.15); /* Slightly stretches vertically to match classic WSJ logotype */
         }
 
         /* Article Layout container */
@@ -312,26 +312,22 @@
     <!-- CSS Stock Marquee -->
     <div class="ticker-wrap">
         <div class="ticker-move">
-            <!-- Duplicated twice for seamless scrolling -->
-            <div class="ticker-item"><span class="t-sym">SPX</span> <span class="t-up">▲ 0.8%</span></div>
-            <div class="ticker-item"><span class="t-sym">NVDA</span> <span class="t-up">▲ 2.1%</span></div>
-            <div class="ticker-item"><span class="t-sym">TSLA</span> <span class="t-down">▼ 1.4%</span></div>
-            <div class="ticker-item"><span class="t-personal">$AARADHYA</span> <span class="t-up">▲ 9,999%</span></div>
+            <!-- First Set -->
+            <div class="ticker-item"><span class="t-sym">SMILE_INDEX</span> <span class="t-up">▲ 100%</span></div>
+            <div class="ticker-item"><span class="t-sym">CAFFEINE_VOL</span> <span class="t-up">▲ 14.2%</span></div>
             <div class="ticker-item"><span class="t-sym">PHYSICS_ANXIETY</span> <span class="t-down">▼ 85%</span></div>
-            <div class="ticker-item"><span class="t-sym">AAPL</span> <span class="t-up">▲ 0.4%</span></div>
-            <div class="ticker-item"><span class="t-personal">$CUTENESS</span> <span class="t-up">▲ MAX</span></div>
-            <div class="ticker-item"><span class="t-sym">BTC</span> <span class="t-down">▼ 3.2%</span></div>
-            <div class="ticker-item"><span class="t-sym">NEET_RELEVANCE</span> <span class="t-down">▼ 99.9%</span></div>
-            <!-- Duplicate block -->
-            <div class="ticker-item"><span class="t-sym">SPX</span> <span class="t-up">▲ 0.8%</span></div>
-            <div class="ticker-item"><span class="t-sym">NVDA</span> <span class="t-up">▲ 2.1%</span></div>
-            <div class="ticker-item"><span class="t-sym">TSLA</span> <span class="t-down">▼ 1.4%</span></div>
             <div class="ticker-item"><span class="t-personal">$AARADHYA</span> <span class="t-up">▲ 9,999%</span></div>
+            <div class="ticker-item"><span class="t-sym">POETRY_FUTURES</span> <span class="t-up">▲ 8.9%</span></div>
+            <div class="ticker-item"><span class="t-sym">KREBS_CYCLE</span> <span class="t-down">▼ 2.1%</span></div>
+            <div class="ticker-item"><span class="t-personal">$MY_FOCUS</span> <span class="t-up">▲ MAX</span></div>
+            <!-- Duplicated for seamless scrolling -->
+            <div class="ticker-item"><span class="t-sym">SMILE_INDEX</span> <span class="t-up">▲ 100%</span></div>
+            <div class="ticker-item"><span class="t-sym">CAFFEINE_VOL</span> <span class="t-up">▲ 14.2%</span></div>
             <div class="ticker-item"><span class="t-sym">PHYSICS_ANXIETY</span> <span class="t-down">▼ 85%</span></div>
-            <div class="ticker-item"><span class="t-sym">AAPL</span> <span class="t-up">▲ 0.4%</span></div>
-            <div class="ticker-item"><span class="t-personal">$CUTENESS</span> <span class="t-up">▲ MAX</span></div>
-            <div class="ticker-item"><span class="t-sym">BTC</span> <span class="t-down">▼ 3.2%</span></div>
-            <div class="ticker-item"><span class="t-sym">NEET_RELEVANCE</span> <span class="t-down">▼ 99.9%</span></div>
+            <div class="ticker-item"><span class="t-personal">$AARADHYA</span> <span class="t-up">▲ 9,999%</span></div>
+            <div class="ticker-item"><span class="t-sym">POETRY_FUTURES</span> <span class="t-up">▲ 8.9%</span></div>
+            <div class="ticker-item"><span class="t-sym">KREBS_CYCLE</span> <span class="t-down">▼ 2.1%</span></div>
+            <div class="ticker-item"><span class="t-personal">$MY_FOCUS</span> <span class="t-up">▲ MAX</span></div>
         </div>
     </div>
 
@@ -345,7 +341,7 @@
         
         <h1 class="headline">Global Markets Are Tumbling, AI is Hallucinating, and My Entire Portfolio is Invested in You</h1>
         
-        <h2 class="subheadline">Jerome Powell is keeping interest rates high and Nvidia is hoarding chips, but the most fascinating anomaly in the global system is a biology enthusiast preparing for tomorrow's exam.</h2>
+        <h2 class="subheadline">Jerome Powell is keeping interest rates high and Silicon Valley is hoarding chips, but the most fascinating anomaly in the global system is a biology enthusiast preparing for tomorrow's exam.</h2>
         
         <div class="article-meta">
             <div class="byline">By Niv</div>
@@ -408,7 +404,7 @@
                     <div class="plot-row">
                         <div class="plot-label">Chance of Me Leaving</div>
                         <div class="plot-bar-container">
-                            <div class="visual-bar"><div class="visual-fill" style="width: 2%; background: var(--wsj-green);"></div></div>
+                            <div class="visual-bar"><div class="visual-fill" style="width: 0%; background: var(--wsj-green);"></div></div>
                         </div>
                     </div>
                 </div>
